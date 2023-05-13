@@ -1,0 +1,8 @@
+autopep8
+selenium
+requests
+datetime
+python-dotenv 
+urllib3==1.26.15
+
+
