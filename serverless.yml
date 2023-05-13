@@ -1,0 +1,16 @@
+service: my-service
+frameworkVersion: "3"
+provider:
+  name: aws
+  runtime: provided
+  region: ap-northeast-1
+  ecr:
+    images:
+      mitoma20:
+        path: ./
+plugins:
+  - serverless-dotenv-plugin
+functions:
+  app:
+    image: mitoma20
+    timeout: 900
